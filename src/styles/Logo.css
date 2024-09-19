@@ -1,0 +1,44 @@
+.logo {
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.logo::after,
+.logo::before {
+  content: "";
+  background-image: conic-gradient(from var(--angle), transparent, purple);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /* Ensure border is included in element's width and height */
+  z-index: -1;
+  animation: 3s spin linear infinite;
+  border-radius: 5px;
+}
+/* .logo::before {
+  filter: blur(1rem);
+  opacity: 0.2;
+} */
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* .menu {
+  background-image: url("../assets//images//bg.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+} */
