@@ -7,7 +7,7 @@ body {
 
 .snap-container {
   height: 100vh;
-  scroll-snap-type: y mandatory; /* Vertical snapping */
+  scroll-snap-type: y proximity; /* Vertical snapping */
   overflow-y: scroll;
 }
 
@@ -27,5 +27,6 @@ body {
   }
   .snap-container {
     scroll-snap-type: none;
+    height: auto;
   }
 }
