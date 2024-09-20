@@ -1,6 +1,7 @@
 // routes.js
+import Circulars from "./views/Circulars/Circulars";
 import Home from "./views/Home/Home";
-import Login from "./views/login/Login";
+import Shop from "./views/Shop/Shop";
 // import UserProfile from "./pages/UserProfile";
 // import NotFoundPage from "./pages/NotFoundPage";
 
@@ -12,9 +13,14 @@ export const routes = [
     name: "Home", // Name for navigation
   },
   {
-    path: "/login",
-    element: <Login />,
-    name: "Login", // Name for navigation
+    path: "/shop",
+    element: <Shop />,
+    name: "Shop", // Name for navigation
+  },
+  {
+    path: "/circulars",
+    element: <Circulars />,
+    name: "Circulars", // Name for navigation
   },
   // {
   //   path: "/user/:id",

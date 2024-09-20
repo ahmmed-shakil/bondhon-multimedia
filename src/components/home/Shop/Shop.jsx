@@ -66,7 +66,7 @@ const Shop = () => {
         <h3 className="font-semibold text-center mb-4 text-xl">
           Available Products
         </h3>
-        <div className="grid md:grid-cols-5 gap-3 items-center justify-center pt-8">
+        <div className="grid md:grid-cols-5 gap-3 items-center justify-center pt-5">
           {data?.map((d, i) => (
             <div
               key={i}
@@ -90,7 +90,7 @@ const Shop = () => {
             </div>
           ))}
         </div>
-        <div className=" mt-10 flex justify-center">
+        <div className=" mt-5 flex justify-center">
           <button className=" border-2 border-primary bg-white shadow-md text-sm py-2 px-4 rounded-md hover:bg-primary hover:text-white">
             View All
           </button>

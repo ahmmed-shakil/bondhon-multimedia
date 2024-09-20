@@ -48,7 +48,7 @@ const Hero = () => {
                 And enjoy the convenience of our comprehensive online solutions.
                 Everything you need, all in one place.
               </p>
-              <div className=" grid grid-cols-3 gap-3">
+              <div className=" grid md:grid-cols-3 gap-3">
                 {services?.map((s, i) => (
                   <HeroCard key={i} data={s} />
                 ))}

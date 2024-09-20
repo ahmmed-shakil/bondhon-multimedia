@@ -1,6 +1,6 @@
 // import Footer from "./Footer";
 import PropTypes from "prop-types";
-import Navbar from "./Menu";
+import Navbar from "./Navbar";
 import Footer from "../footer/Footer";
 
 const ContentLayout = ({ children }) => {
@@ -11,7 +11,9 @@ const ContentLayout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
-      <Footer />
+      <div className=" block md:hidden">
+        <Footer />
+      </div>
     </>
   );
 };

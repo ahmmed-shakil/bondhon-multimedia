@@ -1,3 +1,31 @@
-.home {
-  scroll-snap-type: y mandatory;
+html,
+body {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  /* height: 100%;  */
+  overflow: hidden;
+}
+
+.snap-container {
+  height: 100vh;
+  scroll-snap-type: y mandatory; /* Vertical snapping */
+  overflow-y: scroll;
+}
+
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start; /* Snap sections to the top */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .snap-section {
+    height: auto; /* Let sections take their natural height */
+  }
+  html,
+  body {
+    overflow: visible;
+  }
+  .snap-container {
+    scroll-snap-type: none;
+  }
 }

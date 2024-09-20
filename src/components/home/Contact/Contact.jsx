@@ -2,7 +2,10 @@ import { Inbox, Library, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="md:h-screen snap-start snap-mandatory py-1 my-10 flex justify-center items-center">
+    <div
+      className=" snap-start snap-mandatory py-1 pt-10 md:mb-10 flex justify-center items-center"
+      // style={{ height: "calc(100vh-112px)" }}
+    >
       <div className="max-w-7xl mx-auto">
         <h3 className="font-semibold text-center mb-4 text-xl">Contact</h3>
         <div className=" grid md:grid-cols-2 gap-4 px-2 pt-8 justify-center items-center">

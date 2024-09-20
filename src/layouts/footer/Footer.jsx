@@ -3,7 +3,7 @@ import { routes } from "../../routes";
 
 const Footer = () => {
   return (
-    <div className=" bg-purple-200 py-4 flex flex-col justify-center items-center">
+    <div className=" bg-purple-200 py-4 h-auto md:h-32  flex flex-col justify-center items-center">
       <div
         className=" flex justify-center
        items-center gap-3"
