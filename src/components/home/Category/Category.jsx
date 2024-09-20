@@ -1,36 +1,65 @@
+import pen from "../../../assets/images/categories/pen.jpeg";
+import pencil from "../../../assets/images/categories/pencil.jpeg";
+import eraser from "../../../assets/images/categories/eraser.jpg";
+import sharpener from "../../../assets/images/categories/sharpener.webp";
+import ruler from "../../../assets/images/categories/ruler.webp";
+import fileBag from "../../../assets/images/categories/bag.jpg";
+import color from "../../../assets/images/categories/color_pencil.jpeg";
+import oilPastel from "../../../assets/images/categories/oil.jpg";
+import paper from "../../../assets/images/categories/paper.jpg";
+import offset from "../../../assets/images/categories/offset.jpg";
+import noteBook from "../../../assets/images/categories/notebook.webp";
+import leminate from "../../../assets/images/categories/leminate.webp";
+
 const Category = () => {
   const data = [
     {
       title: "Pen",
-      image: "https://via.placeholder.com/150",
+      image: pen,
     },
     {
       title: "Pencil",
-      image: "https://via.placeholder.com/150",
+      image: pencil,
+    },
+    {
+      title: "Paper",
+      image: paper,
     },
     {
       title: "Eraser",
-      image: "https://via.placeholder.com/150",
+      image: eraser,
     },
     {
       title: "Sharpener",
-      image: "https://via.placeholder.com/150",
+      image: sharpener,
     },
     {
       title: "Notebook",
-      image: "https://via.placeholder.com/150",
+      image: noteBook,
     },
     {
       title: "Laminate",
-      image: "https://via.placeholder.com/150",
+      image: leminate,
     },
     {
       title: "File Carry Bag",
-      image: "https://via.placeholder.com/150",
+      image: fileBag,
     },
     {
       title: "Offset Paper",
-      image: "https://via.placeholder.com/150",
+      image: offset,
+    },
+    {
+      title: "Ruler",
+      image: ruler,
+    },
+    {
+      title: "Color Pencil",
+      image: color,
+    },
+    {
+      title: "Oil Paster",
+      image: oilPastel,
     },
   ];
 

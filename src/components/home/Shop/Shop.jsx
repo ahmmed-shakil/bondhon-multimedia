@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ContentLayout from "../../../layouts/navbar/ContentLayout";
 import "../../../styles/Shop.css";
 
@@ -91,9 +92,12 @@ const Shop = () => {
           ))}
         </div>
         <div className=" mt-5 flex justify-center">
-          <button className=" border-2 border-primary bg-white shadow-md text-sm py-2 px-4 rounded-md hover:bg-primary hover:text-white">
+          <Link
+            to={"/shop"}
+            className=" border-2 border-primary bg-white shadow-md text-sm py-2 px-4 rounded-md hover:bg-primary hover:text-white"
+          >
             View All
-          </button>
+          </Link>
         </div>
       </div>
     </div>

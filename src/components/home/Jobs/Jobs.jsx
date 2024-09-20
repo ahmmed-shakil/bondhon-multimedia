@@ -68,9 +68,12 @@ const Jobs = () => {
         </div>
       </div>
       <div className=" mt-10 flex justify-center">
-        <button className=" border-2 border-primary bg-white shadow-md text-sm py-2 px-4 rounded-md hover:bg-primary hover:text-white">
+        <Link
+          to={"/circulars"}
+          className=" border-2 border-primary bg-white shadow-md text-sm py-2 px-4 rounded-md hover:bg-primary hover:text-white"
+        >
           View All
-        </button>
+        </Link>
       </div>
     </div>
   );
