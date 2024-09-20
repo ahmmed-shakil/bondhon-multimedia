@@ -75,7 +75,7 @@ const Category = () => {
               key={i}
               className="flex flex-col justify-center items-center group"
             >
-              <div className="relative overflow-hidden rounded-full h-44 w-44">
+              <div className="relative overflow-hidden rounded-full h-44 w-44 shadow-xl">
                 <img
                   src={d?.image}
                   className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-125"

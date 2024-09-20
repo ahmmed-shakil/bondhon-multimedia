@@ -52,6 +52,7 @@ const Jobs = () => {
         <div className=" grid md:grid-cols-2 justify-between items-center gap-10 md:px-4 pt-8 px-2">
           {data?.map((c, i) => (
             <Link
+              to={`/details/1`}
               key={i}
               className=" border border-primary bg-primary text-white shadow-sm hover:shadow-lg rounded-md p-3 hover:text-slate-200"
             >

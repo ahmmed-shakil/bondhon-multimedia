@@ -43,7 +43,7 @@ const Hero = () => {
                 Your One-Stop Solution: Printing and Online Services
               </h2>
               <p className=" text-sm">
-                Explore our extensive collection of books and resources,
+                Explore our extensive collection of stationary resources,
                 Experience top-quality printing services tailored to your needs,
                 And enjoy the convenience of our comprehensive online solutions.
                 Everything you need, all in one place.

@@ -2,6 +2,7 @@
 import Circulars from "./views/Circulars/Circulars";
 import Home from "./views/Home/Home";
 import Shop from "./views/Shop/Shop";
+import SingleJob from "./views/SingleJob/SingleJob";
 // import UserProfile from "./pages/UserProfile";
 // import NotFoundPage from "./pages/NotFoundPage";
 
@@ -22,12 +23,11 @@ export const routes = [
     element: <Circulars />,
     name: "Circulars", // Name for navigation
   },
-  // {
-  //   path: "/user/:id",
-  //   element: <UserProfile />,
-  //   getLayout: (page) => <UserLayout>{page}</UserLayout>,
-  //   name: "User Profile", // Name for navigation
-  // },
+  {
+    path: "/details/:id",
+    element: <SingleJob />,
+    getLayout: (page) => <>{page}</>,
+  },
   // {
   //   path: "*",
   //   element: <NotFoundPage />,

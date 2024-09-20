@@ -22,10 +22,10 @@
   animation: 3s spin linear infinite;
   border-radius: 5px;
 }
-/* .logo::before {
-  filter: blur(1rem);
+.logo::before {
+  filter: blur(1.5rem);
   opacity: 0.2;
-} */
+}
 
 @keyframes spin {
   from {

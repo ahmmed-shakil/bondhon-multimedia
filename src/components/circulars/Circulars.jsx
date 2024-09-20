@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "../../layouts/footer/Footer";
+import JobFilter from "../JobFilter/JobFilter";
 
 const CircularsComponent = () => {
   const data = [
@@ -51,11 +52,15 @@ const CircularsComponent = () => {
           <h3 className="font-semibold text-center mb-4 text-xl">
             Job & Admission Circulars
           </h3>
-          <div className=" grid md:grid-cols-1 justify-between items-center gap-10 md:px-4 pt-8 px-2">
+          <div className=" mt-8 mb-2 p-3">
+            <JobFilter />
+          </div>
+          <div className=" grid md:grid-cols-1 justify-between items-center gap-2 md:px-4 pt-8 px-2">
             {data?.map((c, i) => (
               <Link
+                to={`/details/1`}
                 key={i}
-                className=" border border-primary bg-primary text-white shadow-sm hover:shadow-lg rounded-md p-3 hover:text-slate-200"
+                className=" border border-primary  shadow-sm hover:shadow-lg rounded-md p-3 hover:text-primary"
               >
                 <p>
                   {i + 1}. {c?.title}
