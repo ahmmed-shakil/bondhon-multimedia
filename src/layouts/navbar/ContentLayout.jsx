@@ -1,7 +1,7 @@
 // import Footer from "./Footer";
 import PropTypes from "prop-types";
-import Navbar from "./Navbar";
 import Footer from "../footer/Footer";
+import Navbar from "./Navbar";
 
 const ContentLayout = ({ children }) => {
   return (
